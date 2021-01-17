@@ -1,0 +1,21 @@
+{% extends 'imageshaper_base.html' %}
+
+{% block content %}
+
+<p>
+    <a href="{% url 'index' %}">Назад к списку</a>
+</p>
+
+<form action="{% url 'do_resize' %}" method="post">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <input type="submit">
+</form>
+
+<p>
+    {% if img %}
+        <img src="../media/{{ img.fs_path }}" />
+    {% endif %}
+</p>
+
+{% endblock %}
