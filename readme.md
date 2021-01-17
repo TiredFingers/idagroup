@@ -8,7 +8,7 @@
 
 Клонируйте проект средствами git
 
-> git clone %project url%
+> git clone https://github.com/TiredFingers/idagroup.git
 
 
 Перейдите в директорию проекта
