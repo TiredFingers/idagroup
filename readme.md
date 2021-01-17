@@ -33,7 +33,8 @@
 Перейдите в директорию proj
 Инициализируйте БД
 
-> py manage.py makemigrations
+> py manage.py makemigrations imageshaper
+
 > py manage.py migrate
 
 Запустите проект
